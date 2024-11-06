@@ -1,0 +1,27 @@
+name: Deploy to FTP
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: FTP Deployer
+        uses: sand4rt/ftp-deployer@v1.8
+        with:
+          sftp: false
+          host: ${{ vars.FTP_HOST }}
+          port: 21
+          username: ${{ vars.FTP_USERNAME }}
+          password: ${{ vars.FTP_PASSWORD }}
+          remote_folder: ${{ vars.FTP_REMOTE_FOLDER_DEV }}
+          local_folder: .  # Set the folder where your code is located (e.g., "." for the root directory)
+          cleanup: false
+          passive: true

@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="shortcut icon" href="images/favicon.png" type="">
+
+  <title> Sanative Healthcare </title>
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+
+  <!--owl slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+  <!-- font awesome style -->
+  <link href="css/font-awesome.min.css" rel="stylesheet" />
+
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+</head>
+<style>
+  body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+  }
+  .navbar-nav .nav-link {
+  color: #333;
+  transition: color 0.5s;
+  font-size: 0.9em; /* Decreased font size */
+}
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+    color: #1fab89;
+  }
+  .navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  /* background-color: rgba(31, 171, 137, 0.8); Semi-transparent background */
+  left: 0;
+  right: 0;
+  font-weight: 600;
+  padding: 10px;
+  height: 13vh;
+  z-index: 1000;
+  color: black;
+  backdrop-filter: blur(10px); /* Increased blur effect */
+}
+
+  p, a, li {
+    font-size: 1.1em;
+    line-height: 1.6;
+  }
+
+  .navbar-brand span {
+    font-weight: 700;
+    color: #1fab89;
+    backdrop-filter: blur(10px);
+  }
+
+  .navbar-nav .nav-link {
+    color: #333;
+    transition: color 0.5s;
+  }
+
+  .navbar-nav .nav-link:hover {
+    color: #ff6f61;
+  }
+
+  .btn1 {
+    background-color: #1fab89;
+    color: #fff;
+    border-radius: 20px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+  }
+
+  .btn1:hover {
+    background-color: #ff6f61;
+  }
+
+  .footer-content, .footer_links a {
+    font-size: 0.9em;
+  }
+
+   .navbar-collapse.show {
+      
+      backdrop-filter: blur(0.5em); /* Glass effect */
+      margin-left: 20px;
+    }
+
+
+</style>
+<style>
+   .navbar-nav .nav-link {
+  color: #333;
+  transition: color 0.5s;
+  font-size: 0.9em; /* Decreased font size */
+}
+
+    .navbar {
+        position: sticky;
+        right: 0;
+        top: 0;
+        width: 100%;
+        left: 0;
+        z-index: 1000;
+        background: transparent;
+        color: black;
+      }
+  
+      .navbar-brand span {
+        color: black;
+        font-weight: 700;
+        padding-left: 20px;
+      }
+  
+      .navbar-nav .nav-link {
+        color: black;
+        transition: color 0.5s;
+      }
+  
+      .navbar-nav .nav-link:hover {
+        color: #ff6f61;
+      }
+  
+    /* Add this block for mobile navbar background */
+    .navbar {
+      
+      backdrop-filter: blur(0.5em); /* Glass effect */
+    }
+  
+    .dropdown-menu {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    backdrop-filter: blur(20px);
+  
+  }
+  
+  .nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+  }
+  .dropdown-menu {
+    backdrop-filter: blur(20px);
+  
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    background-color: #f8f9fa; /* Light background for modern look */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    padding: 10px 0; /* Padding for spacing */
+  }
+  
+  .nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+  }
+  .hero_area {
+      position: relative;
+      text-align: center;
+      color: white;
+      background: url('images/f.jpg') no-repeat right right/cover;
+      height: 80vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: -56px;
+    }
+
+  
+  .dropdown-item {
+    backdrop-filter: blur(20px);
+    padding: 10px 20px; /* Spacing inside each item */
+    color: #333; /* Dark text color for contrast */
+    font-weight: 500; /* Slightly bold text */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover effects */
+    border-bottom: 1px solid #e9ecef; /* Divider between items */
+  }
+  
+  .dropdown-item:last-child {
+    border-bottom: none; /* Remove border from last item */
+  }
+  
+  .dropdown-item:hover {
+    background-color: #1fab89; /* Highlight color on hover */
+    color: #fff; /* White text on hover */
+    border-radius: 4px; /* Rounded corners on hover */
+  }
+  
+
+  
+      .navbar-brand span {
+        color: black;
+        font-weight: 700;
+      }
+  
+      .navbar-nav .nav-link {
+        color: black;
+        transition: color 0.5s;
+      }
+  
+      .navbar-nav .nav-link:hover {
+        color: #ff6f61;
+      }
+  
+    /* Add this block for mobile navbar background */
+    .navbar {
+      
+      backdrop-filter: blur(0.5em); /* Glass effect */
+    }
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(to right, #f4f4f9, #e0e0e0);
+      color: #333;
+      overflow-x: hidden;
+      margin: 0;
+    }
+
+
+    .navbar-brand span {
+      color: black;
+      font-weight: 700;
+    }
+
+    .navbar-nav .nav-link {
+      color: black;
+      transition: color 0.3s;
+    }
+
+    .navbar-nav .nav-link:hover {
+      color: #ff6f61;
+    }
+
+    .hero_area {
+      position: relative;
+      text-align: center;
+      color: white;
+      background: url('images/ser1.jpeg') no-repeat right center/cover;
+      height: 80vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: -56px;
+    }
+
+    .hero_area h1 {
+      font-size: 4rem;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    .navbar {
+    
+    backdrop-filter: blur(10px); /* Glass effect */
+  }
+
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+      .hero_area {
+        height: 60vh;
+      }
+
+      .hero_area h1 {
+        font-size: 3rem;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .hero_area {
+        height: 50vh;
+      }
+
+      .hero_area h1 {
+        font-size: 2.5rem;
+      }
+    }
+
+    @media (max-width: 768px) {
+  .hero_area {
+    height: 60vh;
+  }
+
+  .hero_area h1 {
+    font-size: 3rem;
+  }}
+
+  @media (max-width: 576px) {
+  .hero_area {
+    height: 50vh;
+  }
+
+  .hero_area h1 {
+    font-size: 2.5rem;
+  }
+  }
+
+  /* Add this CSS to your existing styles */
+@media (max-width: 768px) {
+  .navbar-collapse.show {
+    backdrop-filter: blur(10px); /* Glass effect */
+    /* Light background with transparency */
+    opacity: 1;
+    border-radius: 10px;
+    transition: backdrop-filter  ease, background-color  ease;
+  }
+/* Add or update these styles in your CSS */
+@media (max-width: 768px) {
+  .navbar-collapse {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); /* For Safari support */
+    padding: 1rem;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .navbar-collapse .navbar-nav {
+    padding: 10px 0;
+  }
+/* Handle dropdown menu in mobile view */
+.navbar-collapse .dropdown-menu {
+  background-color: rgba(255, 255, 255, 1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: none;
+  margin: 100px auto; /* Center the dropdown menu */
+  box-shadow: none;
+  width: fit-content; /* Adjust width to fit content */
+  left: 50%; /* Position from the left */
+  transform: translateX(-50%); /* Center align */
+}
+
+  .navbar-collapse .nav-link {
+    color: #333 !important; /* Force dark text color for better visibility */
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+
+  .navbar-collapse .nav-link:hover {
+    background-color: rgba(31, 171, 137, 0.1); /* Light hover effect */
+  }
+
+  /* Handle dropdown menu in mobile view */
+  .navbar-collapse .dropdown-menu {
+    background-color: rgba(255, 255, 255, 1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: none;
+    margin: 10px;
+    box-shadow: none;
+  }
+}
+
+
+/* Ensure the navbar container has proper z-index */
+.custom_nav-container {
+  position: relative;
+  z-index: 1000;
+}
+
+  .navbar-nav .nav-link {
+    color: #333; /* Ensure text is visible */
+  }
+}
+
+  /* Add this block for mobile navbar background */
+  .navbar {
+    
+    backdrop-filter: blur(10px); /* Glass effect */
+  }
+  .navbar {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        font-weight: 600;
+        z-index: 1000;
+        background: transparent;
+        color: black;
+      }
+  </style>
+  <style>
+    /* Default styles */
+    .custom_nav-container .navbar-toggler {
+      padding: 0;
+      width: 37px;
+      height: 42px;
+      -webkit-transition: all 0.3s;
+      transition: all 0.3s;
+    }
+  
+    .custom_nav-container .navbar-toggler span {
+      display: block;
+      width: 35px;
+      height: 4px;
+      background-color: white;
+      margin: 7px 0;
+      -webkit-transition: all 0.3s;
+      transition: all 0.3s;
+      position: relative;
+      border-radius: 5px;
+      transition: all 0.3s;
+    }
+  
+    .custom_nav-container .navbar-toggler span::before,
+    .custom_nav-container .navbar-toggler span::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: white;
+      top: -10px;
+      border-radius: 5px;
+      -webkit-transition: all 0.3s;
+      transition: all 0.3s;
+    }
+  
+    .custom_nav-container .navbar-toggler span::after {
+      top: 10px;
+    }
+  
+    /* Style when scrolled */
+    .scrolled .navbar-toggler span,
+    .scrolled .navbar-toggler span::before,
+    .scrolled .navbar-toggler span::after {
+      background-color: #1fab89;
+    }
+  </style>
+</style>
+<style>
+  /* Default styles */
+  .custom_nav-container .navbar-toggler {
+    padding: 0;
+    width: 37px;
+    height: 42px;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+
+  .custom_nav-container .navbar-toggler span {
+    display: block;
+    width: 35px;
+    height: 4px;
+    background-color: white;
+    margin: 7px 0;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    position: relative;
+    border-radius: 5px;
+    transition: all 0.3s;
+  }
+
+  .custom_nav-container .navbar-toggler span::before,
+  .custom_nav-container .navbar-toggler span::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    top: -10px;
+    border-radius: 5px;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+
+  .custom_nav-container .navbar-toggler span::after {
+    top: 10px;
+  }
+
+  /* Style when scrolled */
+  .scrolled .navbar-toggler span,
+  .scrolled .navbar-toggler span::before,
+  .scrolled .navbar-toggler span::after {
+    background-color: #1fab89;
+  }
+</style>
+<body class="sub_page">
+
+  <header class="header_section">
+    <div class="container" style="margin-bottom: 25px;">
+      <nav class="navbar navbar-expand-lg custom_nav-container">
+     <div style="display: flex;;">
+      <a class="navbar-brand" href="index.html">
+        <span style="color: #f4f4f9;padding-left: 5px;">
+          Sanative Healthcare
+        </span>
+      </a>
+    
+      <button style="margin:auto;" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class=""> </span>
+      </button>
+     </div>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent" style="padding: 20px;margin-right: 20px;">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html"> About</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="./services.html" id="servicesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Services
+              </a>
+              <div class="dropdown-menu" aria-labelledby="servicesDropdown">
+                <a class="dropdown-item" href="./services.html#service1">Assist Access/Maintain Employment</a>
+                <a class="dropdown-item" href="./services.html#service2">Assist Production-Personal Care/Safety</a>
+                <a class="dropdown-item" href="./services.html#service3">Assist Personal Activities High</a>
+                <a class="dropdown-item" href="./services.html#service4">Personal Mobility Equipment</a>
+                <a class="dropdown-item" href="./services.html#service5">Assist-Life Stage, Transition</a>
+                <a class="dropdown-item" href="./services.html#service6">Assist-Travel/Transport</a>
+                <a class="dropdown-item" href="./services.html#service7">Home Modification</a>
+                <a class="dropdown-item" href="./services.html#service8">Daily Tasks/Shared Living</a>
+                <a class="dropdown-item" href="./services.html">More Services!!</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./feedback.html">Feedback</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      
+    </div>
+  </header>
+  <!-- end header section -->
+
+  <div class="hero_area">
+    <!-- <h1>Welcome to Sanative Healthcare</h1> -->
+  </div>
+
+  <!-- department section -->
+
+  <section class="services_section">
+    <div class="container">
+      <div class="heading_container heading_center">
+        <h2>Our Services</h2>
+        <p style="margin: 17px;">Explore our wide range of services designed to help you achieve your goals.</p>
+      </div>
+      <div id="service1" class="row align-items-center">
+        <div class="col-md-6 service_image">
+          <img class="img-fluid" src="images/women-working-call-center.jpg" alt="Employment Assistance">
+        </div>
+        <div class="col-md-6 service_item">
+          <h3>Assist Access/Maintain Employment</h3>
+          <p>We provide comprehensive support to help you access and maintain employment opportunities. Our team offers
+            personalized career counseling, resume building workshops, and interview preparation to ensure you are
+            well-equipped to enter the workforce.</p>
+        </div>
+      </div>
+      <div id="service2" class="row align-items-center">
+        <div class="col-md-6 order-md-2 service_image">
+          <img class="img-fluid" src="images/health-wellbeing-life.jpg" alt="Personal Care">
+        </div>
+        <div class="col-md-6 order-md-1 service_item">
+          <h3>Assist Production-Personal Care/Safety</h3>
+          <p>Our services ensure your personal care and safety are prioritized at all times. We offer tailored support
+            plans that include personal hygiene assistance, safety monitoring, and emergency response systems to enhance
+            your well-being.</p>
+        </div>
+      </div>
+
+      <div id="service3" class="row align-items-center">
+        <div class="col-md-6 order-md-1 service_item">
+          <h3>Assist Personal Activities High</h3>
+          <p>Our services ensure your personal care and safety are prioritized at all times. We focus on empowering you
+            to engage in daily activities with confidence, providing support for meal preparation, medication
+            management, and recreational activities.</p>
+        </div>
+        <div class="col-md-6 order-md-2 service_image">
+          <img class="img-fluid"
+            src="images/african-american-man-wheelchair-enjoying-having-fun-with-her-daughter-park.jpg"
+            alt="Personal Care">
+        </div>
+      </div>
+
+      <div id="service4" class="row align-items-center">
+        <div class="col-md-6 order-md-2 service_image">
+          <img style="height: 370px;width: 500px;" class="img-fluid" src="images/mobility.avif" alt="Personal Care">
+        </div>
+        <div class="col-md-6 order-md-1 service_item">
+          <h3>Personal Mobility Equipment</h3>
+          <p>Our services ensure your personal care and safety are prioritized at all times. We provide access to a
+            range of mobility aids, including wheelchairs, walkers, and scooters, to enhance your independence and
+            mobility.</p>
+        </div>
+      </div>
+
+      <div id="service5" class="row align-items-center">
+        <div class="col-md-6 order-md-2 service_image">
+          <img class="img-fluid" src="images/image4.jpg" alt="Personal Care">
+        </div>
+        <div class="col-md-6 order-md-1 service_item">
+          <h3>Assist-Life Stage, Transition</h3>
+          <p>Our services ensure your personal care and safety are prioritized at all times. We offer guidance and
+            support during significant life transitions, such as moving to a new home or starting a new job, to ensure a
+            smooth and successful adjustment.</p>
+        </div>
+      </div>
+
+      <div id="service6" class="row align-items-center">
+        <div class="col-md-6 order-md-2 service_image">
+          <img style="height: 400px;width: 500px;;object-fit: cover;" class="img-fluid" src="images/image5.avif"
+            alt="Personal Care">
+        </div>
+        <div class="col-md-6 order-md-1 service_item">
+          <h3>Assist-Travel/Transport</h3>
+          <p>Our services ensure your personal care and safety are prioritized at all times. We provide reliable
+            transportation solutions to help you attend appointments, run errands, and participate in community
+            activities with ease.</p>
+        </div>
+      </div>
+
+      <div id="service7" class="row align-items-center">
+        <div class="col-md-6 order-md-2 service_image">
+          <img class="img-fluid" src="images/image6.jpg" alt="Personal Care">
+        </div>
+        <div class="col-md-6 order-md-1 service_item">
+          <h3>Home Modification</h3>
+          <p>Our services ensure your personal care and safety are prioritized at all times. We offer home modification
+            services to enhance accessibility and safety, including the installation of ramps, grab bars, and
+            stairlifts.</p>
+        </div>
+      </div>
+
+      <div id="service8" class="row align-items-center">
+        <div class="col-md-6 order-md-2 service_image">
+          <img class="img-fluid" src="images/images8.jpeg" alt="Personal Care">
+        </div>
+        <div class="col-md-6 order-md-1 service_item">
+          <h3>Daily Tasks/Shared Living</h3>
+          <p>Our services ensure your personal care and safety are prioritized at all times. We support individuals in
+            shared living arrangements by assisting with daily tasks such as cooking, cleaning, and managing household
+            responsibilities.</p>
+        </div>
+      </div>
+
+      <!-- Add more services as needed -->
+    </div>
+  </section>
+
+
+  <section class="reach_us_section"
+    style="display: flex; justify-content: center; align-items: center; width: 100%; background-color: #f0f8ff;">
+    <div class="container"
+      style="text-align: center; padding: 20px; border-radius: 10px;  background-color: #ffffff;">
+      <h4 style="font-family: 'Arial', sans-serif; font-size: 2em; color: #333;">Reach Us</h4>
+      <p style="font-family: 'Arial', sans-serif; font-size: 1.2em; color: #666;">For more details or inquiries, feel
+        free to get in touch with us.</p>
+      <a href="contact.html" class="btn btn-primary"
+        style="display: inline-block; padding: 10px 20px; font-size: 1em; color: #fff; background-color: #1fab89; border-radius: 5px; text-decoration: none; transition: background-color 0.3s ease;">Contact
+        Us</a>
+    </div>
+  </section>
+
+  <!-- end department section -->
+
+  <!-- footer section -->
+  <footer class="footer_section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-lg-3 footer_col">
+          <div class="footer_contact">
+            <h4 style="color: white;">
+              Reach at..
+            </h4>
+            <div class="contact_link_box">
+              <a href="">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                <span>
+                  Location
+                </span>
+              </a>
+              <a href="">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <span>
+                  Call +01 1234567890
+                </span>
+              </a>
+              <a href="">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <span>
+                  demo@gmail.com
+                </span>
+              </a>
+            </div>
+          </div>
+          <div class="footer_social">
+            <a href="">
+              <i class="fa fa-facebook" aria-hidden="true"></i>
+            </a>
+            <a href="">
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+            </a>
+            <a href="">
+              <i class="fa fa-linkedin" aria-hidden="true"></i>
+            </a>
+            <a href="">
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 footer_col">
+          <div class="footer_detail">
+            <h4 style="color: white;">
+              About
+            </h4>
+            <p style="color: white;">
+              Welcome to SanativeHealthcare, where we are dedicated to providing exceptional healthcare services to our community. With a commitment to excellence and a passion for patient care, we strive to be a trusted partner in your health journey.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-2 mx-auto footer_col">
+          <div class="footer_link_box">
+            <h4 style="color: white;">
+              Links
+            </h4>
+            <div class="footer_links">
+              <a class="" href="index.html">
+                Home
+              </a>
+              <a class="" href="about.html">
+                About
+              </a>
+              <a class="active" href="departments.html">
+                Departments
+              </a>
+              <a class="" href="doctors.html">
+                Doctors
+              </a>
+              <a class="" href="contact.html">
+                Contact Us
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 footer_col ">
+          <h4 style="color: white;">
+            Newsletter
+          </h4>
+          <form action="#">
+            <input type="email" placeholder="Enter email" />
+            <button type="submit">
+              Subscribe
+            </button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-info">
+        <p>
+          &copy; <span id="displayYear"></span> All Rights Reserved By
+          <a href="https://html.design/">Sanative Healthcare<br><br></a>
+          &copy; <span id="displayYear"></span> Distributed By
+          <a href="https://themewagon.com/">RachanaWebtech</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+  <!-- footer section -->
+
+  <!-- jQery -->
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <!-- popper js -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+  <!-- bootstrap js -->
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <!-- owl slider -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+  </script>
+  <!-- custom js -->
+  <script type="text/javascript" src="js/custom.js"></script>
+  <!-- Google Map -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
+  </script>
+  <!-- End Google Map -->
+
+</body>
+
+</html>
+<!-- <script>
+  window.onscroll = function () { scrollFunction() };
+
+  function scrollFunction() {
+    var navbar = document.querySelector(".navbar");
+    var navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+    var brandSpan = document.querySelector(".navbar-brand span");
+
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+      navbar.style.backgroundColor = "rgba(255, 255, 255, 0.9)"; // Light background
+      navbar.style.color = "#333"; // Dark text color
+      navLinks.forEach(link => link.style.color = "#1fab89"); // Dark text color for links
+      brandSpan.style.color = "#1fab89"; // Dark text color for brand
+    } else {
+      navbar.style.backgroundColor = "transparent"; // Transparent background
+      navbar.style.color = "#1fab89"; // White text color
+      navLinks.forEach(link => link.style.color = "#1fab89"); // White text color for links
+      brandSpan.style.color = "#1fab89"; // White text color for brand
+    }
+  }
+
+</script> -->
+
+<!-- <script>window.onscroll = function () { scrollFunction(); };
+
+  function scrollFunction() {
+    var navbar = document.querySelector(".navbar");
+    var navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+    var brandSpan = document.querySelector(".navbar-brand span");
+
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+      navbar.style.backgroundColor = "rgba(255, 255, 255, 0.9)"; // Light background
+      navbar.style.color = "#333"; // Dark text color
+      navLinks.forEach(link => {
+        link.style.color = "#1fab89"; // Dark text color for links
+        link.style.borderBottom = "2px solid transparent"; // Default underline
+        link.addEventListener('mouseover', function () {
+          this.style.borderBottom = "2px solid #1fab89"; // Underline on hover
+        });
+        link.addEventListener('mouseout', function () {
+          this.style.borderBottom = "2px solid transparent"; // Remove underline
+        });
+      });
+      brandSpan.style.color = "#1fab89"; // Dark text color for brand
+    } else {
+      navbar.style.backgroundColor = "transparent"; // Transparent background
+      navbar.style.color = "#fff"; // White text color
+      navLinks.forEach(link => {
+        link.style.color = "#fff"; // White text color for links
+        link.style.borderBottom = "2px solid transparent"; // Default underline
+        link.addEventListener('mouseover', function () {
+          this.style.borderBottom = "2px solid whitesmoke"; // Underline on hover
+        });
+        link.addEventListener('mouseout', function () {
+          this.style.borderBottom = "2px solid transparent"; // Remove underline
+        });
+      });
+      brandSpan.style.color = "#fff"; // White text color for brand
+    }
+  }</script> -->
+<script>
+  window.onscroll = function () { scrollFunction(); };
+
+function scrollFunction() {
+  var navbar = document.querySelector(".navbar");
+  var navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+  var brandSpan = document.querySelector(".navbar-brand span");
+
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    navbar.style.backgroundColor = "rgba(255, 255, 255, 0.9)"; // Light background
+    navbar.style.color = "#333"; // Dark text color
+    navLinks.forEach(link => {
+      link.style.color = "#1fab89"; // Dark text color for links
+      link.style.borderBottom = "2px solid transparent"; // Default underline
+      link.addEventListener('mouseover', function () {
+        this.style.borderBottom = "2px solid #1fab89"; // Underline on hover
+      });
+      link.addEventListener('mouseout', function () {
+        this.style.borderBottom = "2px solid transparent"; // Remove underline
+      });
+    });
+    brandSpan.style.color = "#1fab89"; // Dark text color for brand
+  } else {
+    navbar.style.backgroundColor = "transparent"; // Change to #1fab89
+    navbar.style.color = "#fff"; // White text color
+    navLinks.forEach(link => {
+      link.style.color = "#fff"; // White text color for links
+      link.style.borderBottom = "2px solid transparent"; // Default underline
+      link.addEventListener('mouseover', function () {
+        this.style.borderBottom = "2px solid whitesmoke"; // Underline on hover
+      });
+      link.addEventListener('mouseout', function () {
+        this.style.borderBottom = "2px solid transparent"; // Remove underline
+      });
+    });
+    brandSpan.style.color = "#fff"; // White text color for brand
+  }
+}
+</script>
+
+
+<script>
+  window.addEventListener('scroll', function() {
+    const navContainer = document.querySelector('.custom_nav-container');
+    if (window.scrollY > 50) {
+      navContainer.classList.add('scrolled');
+    } else {
+      navContainer.classList.remove('scrolled');
+    }
+  });
+</script>
+
+<script>
+  
+  $('#servicesDropdown').on('click', function(e) {
+    e.preventDefault(); // Prevent default anchor click behavior
+    $(this).next('.dropdown-menu').toggle(); // Toggle the dropdown menu
+  });
+</script>

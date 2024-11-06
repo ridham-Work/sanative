@@ -1,0 +1,1127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="shortcut icon" href="images/favicon.png" type="">
+
+  <title> Sanative Healthcare </title>
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Playfair+Display:wght@400;700&display=swap"
+    rel="stylesheet">
+
+  <!--owl slider stylesheet -->
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+  <!-- font awesome style -->
+  <link href="css/font-awesome.min.css" rel="stylesheet" />
+
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+</head>
+<style>
+  body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: 'Playfair Display', serif;
+    color: #1fab89;
+  }
+
+  p,
+  a,
+  li {
+    font-size: 1.1em;
+    line-height: 1.6;
+  }
+
+  .navbar-brand span {
+    font-weight: 700;
+    color: #1fab89;
+  }
+
+  .navbar-nav .nav-link {
+    color: #333;
+    transition: color 0.5s;
+  }
+
+  .navbar-nav .nav-link:hover {
+    color: #ff6f61;
+  }
+
+  .btn1 {
+    background-color: #1fab89;
+    color: #fff;
+    border-radius: 20px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+  }
+
+  .btn1:hover {
+    background-color: #ff6f61;
+  }
+
+  .footer-content,
+  .footer_links a {
+    font-size: 0.9em;
+  }
+</style>
+
+<style>
+  .navbar {
+    position: fixed;
+    /* Change from absolute to fixed */
+    top: 0;
+    width: 100%;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: transparent;
+    color: black;
+    backdrop-filter: blur(0.5em);
+    /* Glass effect */
+  }
+
+  .navbar {
+    transition: background-color 0.5s ease, color 0.5s ease;
+  }
+
+
+  @media (min-width: 768px) {
+    .navbar-brand span {
+      padding-left: 20px;
+    }
+  }
+
+  .navbar-nav .nav-link {
+    color: #333;
+    transition: color 0.5s;
+    font-size: 0.9em;
+    /* Decreased font size */
+  }
+
+  .navbar-brand span {
+    color: black;
+    font-weight: 700;
+  }
+
+  .navbar-nav .nav-link {
+    color: black;
+    transition: color 0.5s;
+  }
+
+  .navbar-nav .nav-link:hover {
+    color: #ff6f61;
+  }
+
+  /* Add this block for mobile navbar background */
+  .navbar {
+
+    backdrop-filter: blur(0.5em);
+    /* Glass effect */
+  }
+
+  .dropdown-menu {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    backdrop-filter: blur(20px);
+
+  }
+
+  .nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+  }
+
+  .dropdown-menu {
+    backdrop-filter: blur(20px);
+
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    background-color: #f8f9fa;
+    /* Light background for modern look */
+    border-radius: 8px;
+    /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for depth */
+    padding: 10px 0;
+    /* Padding for spacing */
+  }
+
+  .nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+  }
+
+  /* Ensure the dropdown menu is full width on mobile */
+  @media (max-width: 767px) {
+    .dropdown-menu {
+      width: 100%;
+      /* Make the dropdown full width */
+      left: 0;
+      /* Align it to the left */
+      right: 0;
+      /* Align it to the right */
+      margin: 0 auto;
+      /* Center it */
+      box-sizing: border-box;
+      /* Include padding and border in the element's total width and height */
+    }
+  }
+  .navbar-toggler.scrolled {
+  background-color: #1fab89; /* Change to your desired color */
+}
+
+  /* Adjust the dropdown menu styling */
+  .dropdown-menu {
+    backdrop-filter: blur(20px);
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    background-color: #f8f9fa;
+    /* Light background for modern look */
+    border-radius: 8px;
+    /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for depth */
+    padding: 10px 0;
+    /* Padding for spacing */
+  }
+
+  .nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+  }
+
+  .dropdown-item {
+    backdrop-filter: blur(20px);
+    padding: 10px 20px;
+    /* Spacing inside each item */
+    color: #333;
+    /* Dark text color for contrast */
+    font-weight: 500;
+    /* Slightly bold text */
+    transition: background-color 0.3s ease, color 0.3s ease;
+    /* Smooth transition for hover effects */
+    border-bottom: 1px solid #e9ecef;
+    /* Divider between items */
+  }
+
+  .dropdown-item:last-child {
+    border-bottom: none;
+    /* Remove border from last item */
+  }
+
+  .dropdown-item:hover {
+    background-color: #1fab89;
+    /* Highlight color on hover */
+    color: #fff;
+    /* White text on hover */
+    border-radius: 4px;
+    /* Rounded corners on hover */
+  }
+</style>
+<style>
+  .navbar-nav .nav-link {
+    color: #fff;
+    /* Default white text color */
+    transition: color 0.5s;
+  }
+
+  .navbar-brand span {
+    color: #1fab89;
+    /* Default white text color */
+    font-weight: 700;
+  }
+</style>
+<style>
+  .navbar {
+    transition: background-color 0.5s ease, color 0.5s ease;
+  }
+</style>
+
+<style>
+  .navbar-nav .nav-link {
+    color: #fff;
+    /* Default white text color */
+    transition: color 0.5s;
+    font-weight: bold;
+    /* Make font bold */
+  }
+
+  .navbar-brand span {
+    color: #fff;
+    /* Default white text color */
+    font-weight: 700;
+  }
+</style>
+
+<style>
+  /* Default styles */
+  .custom_nav-container .navbar-toggler {
+    padding: 0;
+    width: 37px;
+    height: 42px;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+
+  .custom_nav-container .navbar-toggler span {
+    display: block;
+    width: 35px;
+    height: 4px;
+    background-color: white;
+    margin: 7px 0;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    position: relative;
+    border-radius: 5px;
+    transition: all 0.3s;
+  }
+
+  .custom_nav-container .navbar-toggler span::before,
+  .custom_nav-container .navbar-toggler span::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    top: -10px;
+    border-radius: 5px;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+
+  .custom_nav-container .navbar-toggler span::after {
+    top: 10px;
+  }
+
+  /* Style when scrolled */
+  .scrolled .navbar-toggler span,
+  .scrolled .navbar-toggler span::before,
+  .scrolled .navbar-toggler span::after {
+    background-color: #1fab89;
+  }
+</style>
+
+<body>
+  <div class="hero_area" tyle="background-color: rgba(80, 180, 163,);height:95vh"> <!-- Adjusted height -->
+
+    <div class="hero_bg_box">
+      <div id="overlay" class="overlay" style="display: none;"></div>
+      <img id="heroImage" src="images/hero-bg.png" alt="hero image">
+    </div>
+
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container" style="padding-left: 0px;margin-bottom: 25px;">
+        <nav class="navbar navbar-expand-lg custom_nav-container">
+          <a class="navbar-brand" href="index.html">
+            <span style="color: #f4f4f9;margin-left: 6px;">
+              Sanative Healthcare
+            </span>
+          </a>
+
+          <button style="margin:auto;" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class=""> </span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent" style="padding: 20px;margin-right: 20px;">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html"> About</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="./services.html" id="servicesDropdown" role="button"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Services
+                </a>
+                <div style="margin-right: 100px;" class="dropdown-menu" aria-labelledby="servicesDropdown">
+                  <a class="dropdown-item" href="./services.html#service1">Assist Access/Maintain Employment</a>
+                  <a class="dropdown-item" href="./services.html#service2">Assist Production-Personal Care/Safety</a>
+                  <a class="dropdown-item" href="./services.html#service3">Assist Personal Activities High</a>
+                  <a class="dropdown-item" href="./services.html#service4">Personal Mobility Equipment</a>
+                  <a class="dropdown-item" href="./services.html#service5">Assist-Life Stage, Transition</a>
+                  <a class="dropdown-item" href="./services.html#service6">Assist-Travel/Transport</a>
+                  <a class="dropdown-item" href="./services.html#service7">Home Modification</a>
+                  <a class="dropdown-item" href="./services.html#service8">Daily Tasks/Shared Living</a>
+                  <a class="dropdown-item" href="./services.html">More Services!!</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./feedback.html">Feedback</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+      </div>
+    </header>
+    <!-- end header section -->
+    <!-- slider section -->
+    <section class="slider_section ">
+      <div id="customCarousel1" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container ">
+              <div class="row">
+                <div class="col-md-7">
+                  <div class="detail-box">
+                    <h1 style="margin-top: 20px;">
+                      NDIS empowers individuals with disabilities, fostering a
+                      <span class="typewriter"> independence</span>
+                    </h1>
+                    <p>
+                      Empowering individuals with disabilities to live the life they choose through the support they
+                      deserve NDIS is more than a support system—it's about creating opportunities, building
+                      independence, and fostering inclusion.
+                    </p>
+                    <div class="btn-box">
+                      <a href="" class="btn1">
+                        Read More
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item ">
+            <div class="container ">
+              <div class="row">
+                <div class="col-md-7">
+                  <div class="detail-box">
+                    <h1>
+                      Where Expertise Meets Compassion Your Path to Better andHealthy <span class="typewriter">Starts
+                        Here</span>
+                    </h1>
+                    <p>
+                      Comprehensive, patient-centered healthcare for every stage of life. Personalized care, delivered
+                      with cutting-edge technology and a human touch.
+                    </p>
+                    <div class="btn-box">
+                      <a href="" class="btn1">
+                        Read More
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container ">
+              <div class="row">
+                <div class="col-md-7">
+                  <div class="detail-box">
+                    <h1>
+                      Committed to Your Wellness, Today and Always A Healthier Life <span class="typewriter">Begins with
+                        Us</span>
+                    </h1>
+                    <p>
+                      Advanced medical solutions and compassionate care to enhance your quality of life.We are here to
+                      guide, support, and provide exceptional care for your health needs.
+                    </p>
+                    <div class="btn-box">
+                      <a href="" class="btn1">
+                        Read More
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <ol class="carousel-indicators">
+          <li data-target="#customCarousel1" data-slide-to="0" class="active"></li>
+          <li data-target="#customCarousel1" data-slide-to="1"></li>
+          <li data-target="#customCarousel1" data-slide-to="2"></li>
+        </ol>
+      </div>
+
+    </section>
+    <!-- end slider section -->
+  </div>
+
+
+
+  <!-- services section -->
+  <section class="services_section layout_padding">
+    <div class="container">
+      <div class="heading_container heading_center">
+        <h2>
+          Our Services
+        </h2>
+        <p>
+          A brief overview of our core services, focusing on support for [NDIS](https://www.ndis.gov.au/) participants.
+        </p>
+      </div>
+      <div class="services_wrapper">
+        <div class="service_card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5zey-YdiIrhf5ctHxMK47ER1rg2mcmPp6Bw&s"
+            style="width: 100%;object-fit: cover; height: 150px;">
+          <h5>Assist Access/Maintain Employment</h5>
+          <p>Helping individuals secure and maintain employment with tailored support and resources. We identify
+            suitable roles, enhance skills, and ensure a smooth workforce transition.</p>
+        </div>
+        <div class="service_card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxCerQEuUm4W7w67A5RNaK56uwdxtYrWNP2w&s"
+            style="width: 100%;object-fit: cover; height: 150px;">
+          <h5>Assist Production-Personal Care/Safety</h5>
+          <p>Ensuring personal care and safety through comprehensive support plans. We offer personalized solutions for
+            a safe living environment.</p>
+        </div>
+        <div class="service_card">
+          <img
+            src="https://assets.deloitte.com/is/image/deloitte/healthcare-banner:Mobile?$Responsive$&fmt=webp&fit=stretch,1&dpr=on,2.625"
+            style="width: 100%;object-fit: cover; height: 150px;">
+          <h5>Assist Personal Activities High</h5>
+          <p>Supporting high-level personal activities with specialized assistance, empowering participants to engage in
+            daily activities confidently.</p>
+        </div>
+        <div class="service_card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMaW-o9b4ADMFsWfGcIjXQht9yWnhQCpVLjA&s"
+            alt="Personal Mobility Equipment" style="width: 100%;object-fit: cover; height: 150px;">
+          <h5>Personal Mobility Equipment</h5>
+          <p>Providing essential mobility equipment for enhanced independence, ensuring safe and comfortable navigation.
+          </p>
+        </div>
+        <div class="service_card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtr898A4xCFSomwaPc3qKq7exWejPeGB45xQ&s"
+            alt="Assist-Life Stage, Transition" style="width: 100%;object-fit: cover; height: 150px;">
+          <h5>Assist-Life Stage, Transition</h5>
+          <p>Guiding participants through life stages and transitions with expert advice and support for successful
+            adaptation.</p>
+        </div>
+        <div class="service_card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6xAJIyefkyjyfq6eEtyYbO98xYdJdyklxuA&s"
+            alt="Assist-Travel/Transport" style="width: 100%;object-fit: cover; height: 150px;">
+          <h5>Assist-Travel/Transport</h5>
+          <p>Facilitating travel and transport needs with reliable and accessible solutions, promoting independence and
+            mobility.</p>
+        </div>
+        <div class="service_card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwRx19xPGLQ57gyfiyjUswa3-L1s6opYt09A&s"
+            alt="Home Modification" style="width: 100%;object-fit: cover; height: 150px;">
+          <h5>Home Modification</h5>
+          <p>Customizing homes to meet specific needs, enhancing accessibility and functionality for a safe living
+            environment.</p>
+        </div>
+        <div class="service_card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDpJPy-Wuf-pqoPqbnDNro-Guo6FjhyqgkNw&s"
+            alt="Daily Tasks/Shared Living" style="width: 100%;object-fit: cover; height: 150px;">
+          <h5>Daily Tasks/Shared Living</h5>
+          <p>Supporting daily tasks and shared living arrangements, fostering a collaborative environment for ease of
+            routine management.</p>
+        </div>
+        <div class="service_card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4P3oNEe-gX5gJPIj-tdVFESNnNyv5qRPbgg&s"
+            alt="And many more…" style="width: 100%;object-fit: cover; height: 150px;">
+          <h5>And many more…</h5>
+          <p>Explore our wide range of services tailored for [NDIS](https://www.ndis.gov.au/) participants, ensuring
+            high-quality care and assistance.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end services section -->
+
+  <!-- end services section -->
+
+
+  <!-- end department section -->
+
+  <!-- about section -->
+
+  <section class="about_section layout_margin-bottom">
+    <div class="container  ">
+      <div class="row">
+        <div class="col-md-6 ">
+          <div class="img-box">
+            <img src="images/about-img.jpg" alt="">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="detail-box">
+            <div class="heading_container">
+              <h2>
+                About <span>Us</span>
+              </h2>
+            </div>
+            <p>
+              Welcome to SanativeHealthcare, where we are dedicated to providing exceptional healthcare services to our
+              community. With a commitment to excellence and a passion for patient care, we strive to be a trusted
+              partner in your health journey. We treat every patient with kindness, empathy, and respect, recognizing
+              the importance of emotional support in the healing process.We uphold the highest ethical standards,
+              ensuring transparency and honesty in all our interactions. We work as a team, collaborating with patients,
+              families, and other healthcare providers to achieve the best possible outcomes.We invite you to learn more
+              about our services and how we can support your health and wellness.
+
+            </p>
+            <a href="./about.html">
+              Read More
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end about section -->
+
+  <!-- doctor section -->
+
+  <section class="doctor_section layout_padding">
+    <div class="container">
+      <div class="heading_container heading_center">
+        <h2>
+          Our Doctors
+        </h2>
+        <p class="col-md-10 mx-auto px-0 doctors" style="color: aliceblue;">
+          Incilint sapiente illo quo praesentium officiis laudantium nostrum, ad adipisci cupiditate sit, quisquam
+          aliquid. Officiis laudantium fuga ad voluptas aspernatur error fugiat quos facilis saepe quas fugit, beatae id
+          quisquam.
+        </p>
+      </div>
+      <div class="row">
+        <div class="col-sm-6 col-lg-4 mx-auto">
+          <div class="box">
+            <div class="img-box">
+              <img src="images/d1.jpg" alt="">
+            </div>
+            <div class="detail-box">
+              <div class="social_box">
+                <a href="">
+                  <i class="fa fa-facebook" aria-hidden="true"></i>
+                </a>
+                <a href="">
+                  <i class="fa fa-twitter" aria-hidden="true"></i>
+                </a>
+                <a href="">
+                  <i class="fa fa-youtube" aria-hidden="true"></i>
+                </a>
+                <a href="">
+                  <i class="fa fa-linkedin" aria-hidden="true"></i>
+                </a>
+              </div>
+              <h5>
+                Elina Josh
+              </h5>
+              <h6 class="">
+                Doctor
+              </h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4 mx-auto">
+          <div class="box">
+            <div class="img-box">
+              <img src="images/d2.jpg" alt="">
+            </div>
+            <div class="detail-box">
+              <div class="social_box">
+                <a href="">
+                  <i class="fa fa-facebook" aria-hidden="true"></i>
+                </a>
+                <a href="">
+                  <i class="fa fa-twitter" aria-hidden="true"></i>
+                </a>
+                <a href="">
+                  <i class="fa fa-youtube" aria-hidden="true"></i>
+                </a>
+                <a href="">
+                  <i class="fa fa-linkedin" aria-hidden="true"></i>
+                </a>
+              </div>
+              <h5>
+                Adam View
+              </h5>
+              <h6 class="">
+                Doctor
+              </h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4 mx-auto">
+          <div class="box">
+            <div class="img-box">
+              <img src="images/d3.jpg" alt="">
+            </div>
+            <div class="detail-box">
+              <div class="social_box">
+                <a href="">
+                  <i class="fa fa-facebook" aria-hidden="true"></i>
+                </a>
+                <a href="">
+                  <i class="fa fa-twitter" aria-hidden="true"></i>
+                </a>
+                <a href="">
+                  <i class="fa fa-youtube" aria-hidden="true"></i>
+                </a>
+                <a href="">
+                  <i class="fa fa-linkedin" aria-hidden="true"></i>
+                </a>
+              </div>
+              <h5>
+                Mia Mike
+              </h5>
+              <h6 class="">
+                Doctor
+              </h6>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="btn-box">
+        <a href="">
+          View All
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- end doctor section -->
+
+  <!-- contact section -->
+  <section class="contact_section layout_padding">
+    <div class="container">
+      <div class="heading_container">
+        <h2>
+          Get In Touch
+        </h2>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form_container contact-form">
+            <form action="">
+              <div class="form-row">
+                <div class="col-lg-6">
+                  <div>
+                    <input type="text" placeholder="Your Name" />
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div>
+                    <input type="text" placeholder="Phone Number" />
+                  </div>
+                </div>
+              </div>
+              <div>
+                <input type="email" placeholder="Email" />
+              </div>
+              <div>
+                <input type="text" class="message-box" placeholder="Message" />
+              </div>
+              <div class="btn_box">
+                <button>
+                  SEND
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="map_container">
+            <div class="map">
+              <div id="googleMap"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end contact section -->
+
+  <!-- client section -->
+
+  <section class="client_section layout_padding-bottom">
+    <div class="container">
+      <div class="heading_container heading_center ">
+        <h2>
+          Testimonials
+        </h2>
+      </div>
+      <div id="carouselExample2Controls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row">
+              <div class="col-md-11 col-lg-10 mx-auto">
+                <div class="box">
+                  <div class="img-box">
+                    <img src="images/client.jpg" alt="" style="border-radius: 50%;" />
+                  </div>
+                  <div class="detail-box">
+                    <div class="name">
+                      <h6>
+                        Alan Emerson
+                      </h6>
+                    </div>
+                    <p>
+                      "The healthcare professionals here are top-notch. They provided me with personalized care and
+                      attention, ensuring that all my needs were met. I am grateful for their dedication and expertise."
+                    </p>
+                    <i class="fa fa-quote-left" aria-hidden="true"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-md-11 col-lg-10 mx-auto">
+                <div class="box">
+                  <div class="img-box">
+                    <img src="images/testimonail2.jpg" alt=""
+                      style="border-radius: 50%;width: 150px;height: 160px;object-fit: cover;" />
+                  </div>
+                  <div class="detail-box">
+                    <div class="name">
+                      <h6>
+                        Parvindaar Singh
+                      </h6>
+                    </div>
+                    <p>
+                      "I was impressed by the professionalism and compassion of the healthcare team. They took the time
+                      to explain my treatment options and answered all my questions. I felt truly cared for."
+                    </p>
+                    <i class="fa fa-quote-left" aria-hidden="true"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-md-11 col-lg-10 mx-auto">
+                <div class="box">
+                  <div class="img-box">
+                    <img src="images/testimonail3.jpg" alt=""
+                      style="border-radius: 50%;width: 150px;height: 160px;object-fit: cover;" />
+                  </div>
+                  <div class="detail-box">
+                    <div class="name">
+                      <h6>
+                        Laura Clerk
+                      </h6>
+                    </div>
+                    <p>
+                      "I had a wonderful experience at this healthcare center. The doctors and nurses were attentive and
+                      genuinely cared about my well-being. I felt supported every step of the way."
+                    </p>
+                    <i class="fa fa-quote-left" aria-hidden="true"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+        <div class="carousel_btn-container">
+          <a class="carousel-control-prev" href="#carouselExample2Controls" role="button" data-slide="prev">
+            <i class="fa fa-long-arrow-left" aria-hidden="true"></i>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExample2Controls" role="button" data-slide="next">
+            <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end client section -->
+
+  <!-- footer section -->
+  <footer class="footer_section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-lg-3 footer_col">
+          <div class="footer_contact">
+            <h4 style="color: white;">
+              Reach at..
+            </h4>
+            <div class="contact_link_box">
+              <a href="">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                <span>
+                  Location
+                </span>
+              </a>
+              <a href="">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <span>
+                  Call +01 1234567890
+                </span>
+              </a>
+              <a href="">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <span>
+                  demo@gmail.com
+                </span>
+              </a>
+            </div>
+          </div>
+          <div class="footer_social">
+            <a href="">
+              <i class="fa fa-facebook" aria-hidden="true"></i>
+            </a>
+            <a href="">
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+            </a>
+            <a href="">
+              <i class="fa fa-linkedin" aria-hidden="true"></i>
+            </a>
+            <a href="">
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 footer_col">
+          <div class="footer_detail">
+            <h4 style="color: white;">
+              About
+            </h4>
+            <p class="footer-content">
+              Welcome to SanativeHealthcare, where we are dedicated to providing exceptional healthcare services to our
+              community. With a commitment to excellence and a passion for patient care, we strive to be a trusted
+              partner in your health journey.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-2 mx-auto footer_col">
+          <div class="footer_link_box">
+            <h4 style="color: white;">
+              Links
+            </h4>
+            <div class="footer_links">
+              <a class="active" href="index.html">
+                Home
+              </a>
+              <a class="" href="about.html">
+                About
+              </a>
+              <a class="" href="services.html">
+                Services
+              </a>
+              <a class="" href="feedback.html">
+                Feedback
+              </a>
+              <a class="" href="contact.html">
+                Contact Us
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 footer_col ">
+          <h4 style="color: white;">
+            Newsletter
+          </h4>
+          <form action="#">
+            <input type="email" placeholder="Enter email" />
+            <button type="submit">
+              Subscribe
+            </button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-info">
+        <p>
+          &copy; <span id="displayYear"></span> All Rights Reserved By
+          <a href="https://html.design/">SanativeHealthcare<br><br></a>
+          &copy; <span id="displayYear"></span> Distributed By
+          <a href="https://themewagon.com/">RachanaWebtech</a>
+        </p>
+
+      </div>
+    </div>
+  </footer>
+  <!-- footer section -->
+
+  <!-- jQery -->
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <!-- popper js -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+  <!-- bootstrap js -->
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <!-- owl slider -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+  </script>
+  <!-- custom js -->
+  <script type="text/javascript" src="js/custom.js"></script>
+  <!-- Google Map -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
+  </script>
+  <!-- End Google Map -->
+
+</body>
+
+</html>
+
+
+<script>
+  window.onscroll = function () { scrollFunction() };
+
+function scrollFunction() {
+  var navbar = document.querySelector(".navbar");
+  var navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+  var brandSpan = document.querySelector(".navbar-brand span");
+
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    navbar.style.backgroundColor = "rgba(255, 255, 255, 0.9)"; // Light background
+    navbar.style.color = "#333"; // Dark text color
+    navLinks.forEach(link => link.style.color = "#1fab89"); // Dark text color for links
+    brandSpan.style.color = "#1fab89"; // Dark text color for brand
+  } else {
+    navbar.style.backgroundColor = "transparent"; // Transparent background
+    navbar.style.color = "#fff"; // White text color
+    navLinks.forEach(link => link.style.color = "#fff"); // White text color for links
+    brandSpan.style.color = "#fff"; // White text color for brand
+  }
+}
+
+
+window.onscroll = function () { scrollFunction(); };
+
+function scrollFunction() {
+  var navbar = document.querySelector(".navbar");
+  var navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+  var brandSpan = document.querySelector(".navbar-brand span");
+
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    navbar.style.backgroundColor = "rgba(255, 255, 255, 0.9)"; // Light background
+    navbar.style.color = "#333"; // Dark text color
+    navLinks.forEach(link => {
+      link.style.color = "#1fab89"; // Dark text color for links
+      link.style.borderBottom = "2px solid transparent"; // Default underline
+      link.addEventListener('mouseover', function () {
+        this.style.borderBottom = "2px solid #1fab89"; // Underline on hover
+      });
+      link.addEventListener('mouseout', function () {
+        this.style.borderBottom = "2px solid transparent"; // Remove underline
+      });
+    });
+    brandSpan.style.color = "#1fab89"; // Dark text color for brand
+  } else {
+    navbar.style.backgroundColor = "transparent"; // Transparent background
+    navbar.style.color = "#fff"; // White text color
+    navLinks.forEach(link => {
+      link.style.color = "#fff"; // White text color for links
+      link.style.borderBottom = "2px solid transparent"; // Default underline
+      link.addEventListener('mouseover', function () {
+        this.style.borderBottom = "2px solid whitesmoke"; // Underline on hover
+      });
+      link.addEventListener('mouseout', function () {
+        this.style.borderBottom = "2px solid transparent"; // Remove underline
+      });
+    });
+    brandSpan.style.color = "#fff"; // White text color for brand
+  }
+}
+
+
+// toogler
+
+window.onscroll = function () { scrollFunction(); };
+
+// function scrollFunction() {
+//   var navbar = document.querySelector(".navbar");
+//   var navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+//   var brandSpan = document.querySelector(".navbar-brand span");
+//   var navbarToggler = document.querySelector(".navbar-toggler");
+
+//   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+//     navbar.style.backgroundColor = "rgba(255, 255, 255, 0.9)"; // Light background
+//     navbar.style.color = "#333"; // Dark text color
+//     navLinks.forEach(link => {
+//       link.style.color = "#1fab89"; // Dark text color for links
+//       link.style.borderBottom = "2px solid transparent"; // Default underline
+//       link.addEventListener('mouseover', function () {
+//         this.style.borderBottom = "2px solid #1fab89"; // Underline on hover
+//       });
+//       link.addEventListener('mouseout', function () {
+//         this.style.borderBottom = "2px solid transparent"; // Remove underline
+//       });
+//     });
+//     brandSpan.style.color = "#1fab89"; // Dark text color for brand
+//     navbarToggler.style.backgroundColor = "#1fab89"; // Change navbar-toggler background color
+//   } else {
+//     navbar.style.backgroundColor = "transparent"; // Transparent background
+//     navbar.style.color = "#fff"; // White text color
+//     navLinks.forEach(link => {
+//       link.style.color = "#fff"; // White text color for links
+//       link.style.borderBottom = "2px solid transparent"; // Default underline
+//       link.addEventListener('mouseover', function () {
+//         this.style.borderBottom = "2px solid whitesmoke"; // Underline on hover
+//       });
+//       link.addEventListener('mouseout', function () {
+//         this.style.borderBottom = "2px solid transparent"; // Remove underline
+//       });
+//     });
+//     brandSpan.style.color = "#fff"; // White text color for brand
+//     navbarToggler.style.backgroundColor = "transparent"; // Reset navbar-toggler background color
+//   }
+// }
+</script>
+
+<script>
+  
+</script>
+
+
+
+
+
+
+
+<script>
+  window.addEventListener('scroll', function() {
+    const navContainer = document.querySelector('.custom_nav-container');
+    if (window.scrollY > 50) {
+      navContainer.classList.add('scrolled');
+    } else {
+      navContainer.classList.remove('scrolled');
+    }
+  });
+</script>
